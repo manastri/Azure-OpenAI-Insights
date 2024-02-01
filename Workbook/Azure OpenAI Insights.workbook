@@ -1238,6 +1238,84 @@
                           "chartId": "workbook44a06433-82ec-44c1-8731-83e8a22cd995",
                           "version": "MetricsItem/2.0",
                           "size": 0,
+                          "chartType": 2,
+                          "resourceType": "microsoft.cognitiveservices/accounts",
+                          "metricScope": 0,
+                          "resourceParameter": "Resources",
+                          "resourceIds": [
+                            "{Resources}"
+                          ],
+                          "timeContextFromParameter": "TimeRange",
+                          "timeContext": {
+                            "durationMs": 2592000000
+                          },
+                          "metrics": [
+                            {
+                              "namespace": "microsoft.cognitiveservices/accounts",
+                              "metric": "microsoft.cognitiveservices/accounts-Cognitive Services - HTTP Requests-BlockedCalls",
+                              "aggregation": 7,
+                              "splitBy": "ModelName"
+                            }
+                          ],
+                          "title": "Blocked calls by Operation Name",
+                          "showOpenInMe": true,
+                          "showCreateAlertRule": true,
+                          "gridSettings": {
+                            "formatters": [
+                              {
+                                "columnMatch": "Subscription",
+                                "formatter": 5
+                              },
+                              {
+                                "columnMatch": "Name",
+                                "formatter": 13,
+                                "formatOptions": {
+                                  "linkTarget": "Resource"
+                                }
+                              },
+                              {
+                                "columnMatch": "microsoft.cognitiveservices/accounts-Cognitive Services - HTTP Requests-BlockedCalls Timeline",
+                                "formatter": 5
+                              },
+                              {
+                                "columnMatch": "microsoft.cognitiveservices/accounts-Cognitive Services - HTTP Requests-BlockedCalls",
+                                "formatter": 1,
+                                "numberFormat": {
+                                  "unit": 0,
+                                  "options": null
+                                }
+                              }
+                            ],
+                            "rowLimit": 10000,
+                            "labelSettings": [
+                              {
+                                "columnId": "Subscription",
+                                "label": "Subscription"
+                              },
+                              {
+                                "columnId": "microsoft.cognitiveservices/accounts-Cognitive Services - HTTP Requests-BlockedCalls",
+                                "label": "Azure OpenAI Blocked calls (Sum)"
+                              },
+                              {
+                                "columnId": "microsoft.cognitiveservices/accounts-Cognitive Services - HTTP Requests-BlockedCalls Timeline",
+                                "label": "Azure OpenAI Blocked calls Timeline"
+                              }
+                            ]
+                          }
+                        },
+                        "customWidth": "50",
+                        "showPin": false,
+                        "name": "Metric - Azure OpenAI Blocked calls by Operation Name",
+                        "styleSettings": {
+                          "margin": "0 0 20px 0"
+                        }
+                      },
+                      {
+                        "type": 10,
+                        "content": {
+                          "chartId": "workbook44a06433-82ec-44c1-8731-83e8a22cd995",
+                          "version": "MetricsItem/2.0",
+                          "size": 0,
                           "chartType": 1,
                           "resourceType": "microsoft.cognitiveservices/accounts",
                           "metricScope": 0,
